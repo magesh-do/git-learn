@@ -63,7 +63,6 @@ pipeline {
                             git checkout ${params.BRANCH_NAME}
                             git reset --hard origin/${params.BRANCH_NAME}
                             echo "Deployment to ${params.BRANCH_NAME} completed."
-                            EOF
                             """
                         }
                     } else {
